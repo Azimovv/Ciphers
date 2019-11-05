@@ -1,10 +1,10 @@
 # Transposition Cipher Encryption
 
 def main():
-    myMessage = 'Common sense is not so common'
-    myKey = 8
+    my_message = 'Common sense is not so common'
+    my_key = 8
 
-    ciphertext = encryptMessage(myKey, myMessage)
+    ciphertext = encryptMessage(my_key, my_message)
 
     # Print the encrypted string in ciphertext to the screen, with
     # a '|' after it to indicate the end of the message
