@@ -54,13 +54,13 @@ def makeKeyFiles(name, keySize):
           f"{len(str(publicKey[1]))} digit number")
     print(f"Writing public key to file {name}_pubkey.txt...")
     with open(f"{name}_pubkey.txt", 'w') as fileObj:
-        fileObj.write(f"{keySize}, {publicKey[0]}, {publicKey[1]}")
+        fileObj.write(f"{keySize},{publicKey[0]},{publicKey[1]}")
 
     print(f"\nThe private key is a {len(str(privateKey[0]))} and a "
           f"{len(str(privateKey[1]))} digit number")
     print(f"Writing private key to file {name}_privkey.txt...")
     with open(f"{name}_privkey.txt", 'w') as fileObj:
-        fileObj.write(f"{keySize}, {privateKey[0]}, {privateKey[1]}")
+        fileObj.write(f"{keySize},{privateKey[0]},{privateKey[1]}")
 
 # If makePublicPrivateKeys.py is run (instead of imported as a module)
 # call the main() function
