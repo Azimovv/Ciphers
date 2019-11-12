@@ -10,7 +10,7 @@ SYMBOLS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?."
 def main():
     # Run test that encrypts or decrypts message to a file
     filename = "encrypted_file.txt"
-    mode = "encrypt"
+    mode = "encrypt"  # modes are 'encrypt' and 'decrypt'
 
     if mode == 'encrypt':
         message = "Journalists belong in the gutter because that is where the " \
